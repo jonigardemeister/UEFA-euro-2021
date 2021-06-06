@@ -33,9 +33,9 @@ for team in df_teams['Country']:
 
     df = pd.DataFrame(row_list, columns=columns)
     print(df.shape)
-    df.to_csv('game_results.csv', index=False, encoding='utf-8-sig')
+    df.to_csv('original_game_results.csv', index=False, encoding='utf-8-sig')
     index += 1
 
 df = pd.DataFrame(row_list,columns=columns)
 df.dropna(subset=columns, inplace=True)
-df.to_csv('game_results.csv', index=False, encoding='utf-8-sig')
+df.to_csv('original_game_results.csv', index=False, encoding='utf-8-sig')
